@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop Easy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginPage">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username"><br><br>
+    <input type="password" id="password" placeholder="Password"><br><br>
+    <button onclick="login()">Login</button>
+    <p id="loginMsg"></p>
+</div>
+
+<div id="shopPage" style="display:none;">
+    <h1>Shop Easy</h1>
+    <button onclick="logout()">Logout</button>
+
+    <h3>Smart Watch - ₹3999</h3>
+    <button onclick="addToCart('Smart Watch',3999)">Add to Cart</button>
+
+    <h2>Cart</h2>
+    <ul id="cartItems"></ul>
+    <p id="totalPrice">Total: ₹0</p>
+    <button onclick="buyNow()">Buy Now</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
